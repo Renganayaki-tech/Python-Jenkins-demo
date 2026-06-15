@@ -8,7 +8,7 @@ node {
 
     stage('Run Python Script') {
 
-        bat 'dir'
+        bat '"C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" app.py'
 
     }
 
