@@ -1,15 +1,15 @@
 node {
 
     stage('Checkout') {
-
-        echo 'Source code downloaded from GitHub'
-
+        checkout scm
     }
 
-    stage('Run Python Script') {
+    stage('Show Files') {
+        bat 'dir'
+    }
 
+    stage('Run Python') {
         bat '"C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" app.py'
-
     }
 
 }
